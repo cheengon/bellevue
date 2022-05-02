@@ -7,11 +7,11 @@
 import requests
 
 def main():
-    APP_ID = "ee682d591d365ef3094228a13400017f"
+    API = "ee682d591d365ef3094228a13400017f"
     # get zip code from user
     zip_code = input("Enter a 5-digit, US zip code: ").strip()
     # &units=imperial ensures degrees Farenheit and miles per hour
-    url = f"https://api.openweathermap.org/data/2.5/weather?zip={zip_code},us&APPId={APP_ID}&units=imperial"
+    url = f"https://api.openweathermap.org/data/2.5/weather?zip={zip_code},us&APPId={API}&units=imperial"
     weather_data = get_weather_json(url)
     display_results(weather_data)
 
