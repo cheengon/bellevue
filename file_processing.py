@@ -20,7 +20,7 @@ while True:
         break
 
 #Step 4: Gather user inputs
-fileName = input("Please name the new file?\n")
+fileName = input("Please name the new file:\n")
 filePath = os.path.join(dirPath, fileName)
 inputName = input("Please enter your full name:\n")
 inputAddress = input("Please enter your address:\n")
