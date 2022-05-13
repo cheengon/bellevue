@@ -24,6 +24,7 @@ def main():
             except Exception:
                 print("That didn't work. Please try again.")
                 if_city()
+                
         if answer == "Z" or answer == "z":
             try:
                 if_zip()
